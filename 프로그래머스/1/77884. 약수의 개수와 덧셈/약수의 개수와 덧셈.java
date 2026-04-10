@@ -3,8 +3,7 @@ class Solution {
         int result = 0;
         
         for (int i = left; i <= right; i++) {
-            double sqrt = Math.sqrt(i);
-            if (sqrt == Math.floor(sqrt)) result -= i;
+            if (i % Math.sqrt(i) == 0) result -= i;
             else result += i;
         }
         
