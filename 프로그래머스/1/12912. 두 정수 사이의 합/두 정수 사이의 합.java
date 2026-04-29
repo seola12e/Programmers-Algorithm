@@ -1,17 +1,8 @@
 class Solution {
-    public long solution(long a, long b) {
+    public long solution(int a, int b) {
         if (a == b) return a;
-        
         long sum = 0;
-        
-        if (a > b) {
-            sum = b;
-            b = a;
-            a = sum;
-            sum = 0;
-        }
-        
-        for (long i = a; i <= b; i++) sum += i;
+        for (int i = Math.min(a, b); i <= Math.max(a, b); i++) sum += i;
         return sum;
     }
 }
