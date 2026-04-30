@@ -8,17 +8,6 @@ class Solution {
             n /= 3;
         }
         
-        sb.reverse();
-        
-        int[] arr = new int[sb.toString().length()];
-        int[] arr2 = sb.toString().chars().toArray();
-        
-        int result = 0;
-        
-        for (int i = 0; i < arr.length; i++) {
-            result += (int) (Math.pow(3, i) * (arr2[i] - '0'));
-        }
-        
-        return result;
+        return Integer.parseInt(String.valueOf(sb), 3);
     }
 }
