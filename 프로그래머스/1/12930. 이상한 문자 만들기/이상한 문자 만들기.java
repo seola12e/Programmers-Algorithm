@@ -10,8 +10,8 @@ class Solution {
                 sb.append(" ");
                 index = 0;
             } else {
-                if (index % 2 == 0) sb.append(String.valueOf(c).toUpperCase());
-                else sb.append(String.valueOf(c).toLowerCase());
+                if (index % 2 == 0) sb.append(Character.toUpperCase(c));
+                else sb.append(Character.toLowerCase(c));
                 index++;
             }
         }
