@@ -8,9 +8,9 @@ class Solution {
             if (c == ' ') 
                 result += " ";
             
-            if (c >= 'A' && c <= 'Z') 
+            if (Character.isUpperCase(c)) 
                 result += (char) (((c -'A' + n) % 26) + 'A');
-            else if (c >= 'a' && c <= 'z')
+            else if (Character.isLowerCase(c))
                 result += (char) (((c -'a' + n) % 26) + 'a');
         }
         
