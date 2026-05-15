@@ -12,7 +12,7 @@ class Solution {
             }
         }
         
-        list.sort(Integer::compareTo);
+        Collections.sort(list);
         
         return list;
     }
