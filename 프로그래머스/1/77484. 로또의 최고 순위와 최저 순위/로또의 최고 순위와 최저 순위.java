@@ -14,12 +14,7 @@ class Solution {
             else if (numbers.contains(n)) match++;
         }
         
-        int[] wins = new int[2];
-        
-        wins[0] = rank(match + zeros);
-        wins[1] = rank(match);
-        
-        return wins;
+        return new int[] { rank(match + zeros), rank(match) };
     }
     
     private int rank(int num) {
